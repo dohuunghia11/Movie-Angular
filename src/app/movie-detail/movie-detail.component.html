@@ -1,0 +1,11 @@
+<div *ngIf="movie" class="detail">
+  <h3>You selected: {{movie.name}} with details: </h3>
+  <div><label>
+    User's id:
+  </label> {{movie.id}}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="movie.name" placeholder="Edit movie's name">
+  </div>
+  <button (click)="goBack()">Go Back</button>
+</div>
